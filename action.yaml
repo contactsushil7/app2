@@ -1,0 +1,20 @@
+name: "Python code generator"
+auther: "Sushil yadav"
+description: "THis repo is used to keep solved problem"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+
+inputs:
+  email:
+    description: "the committer email id"
+    required: true
+    default: ${{github.actor}}@localhost
+  name:
+    descriptio: "the committer name"
+    required: true
+    default: ${{github.actor}}
